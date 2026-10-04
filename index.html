@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fifteen calls or six: pricing a retest set by blast radius</title>
+<style>
+body{font:16px/1.6 -apple-system,"Segoe UI",Roboto,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;color:#14161a;background:#fbfcfc}
+h1{font-size:1.4rem;margin-bottom:.3rem}
+p{margin:.5rem 0}
+a{color:#0a58ca}
+footer{margin-top:2.6rem;color:#555;font-size:.9rem}
+</style>
+</head>
+<body>
+<h1>Fifteen calls or six: pricing a retest set by blast radius</h1>
+<p>A prompt chain fails downstream before it fails in place. Edit the instruction in stage two and the symptom shows up three stages later, well after the diff that caused it has shipped. The move the prompt dependency graph work at <a href="https://pastagi.com/">PastAGI</a> argues for is to draw the edges first, which stages feed which, and let a change retest only what it can reach.</p>
+
+<p>Serving math makes the stakes countable. At the $6 an hour the GPT-6 Astra audit prices, a thirty-second eval call runs about five cents: 6 divided by 120 calls. A six-stage chain where an edit at stage two puts five stages at risk wants three paraphrases per stage to catch drift, fifteen calls, seventy-five cents, every tweak. If the edges show the change can only reach two of those stages, the same tweak costs thirty cents. Nothing about the evals got better; the retest stopped covering stages the edit cannot touch.</p>
+
+<p>Twenty tweaks a month turns that into 300 calls against 120, fifteen dollars against six. The dollars are small, and that is exactly why the scoping never happens on its own: when evals feel free, the habit is to run everything every time. Pricing the call changes the habit. A retest set with a line on the invoice gets scoped the way any other budget line does, and the edges decide what runs instead of the default.</p>
+
+<footer>More cost audits and serving math at <a href="https://pastagi.com/">PastAGI</a>.</footer>
+</body>
+</html>
